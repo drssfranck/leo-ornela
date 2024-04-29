@@ -98,7 +98,7 @@ function MyVerticallyCenteredModal(props) {
         </Modal.Title>
       </Modal.Header>
       <Modal.Body>
-        <Image src={data[props.id].img} alt='' />
+        <Image src={data[props.id].img} alt='' width={300} height={300}/>
         <p>
           Cras mattis consectetur purus sit amet fermentum. Cras justo odio,
           dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac
@@ -121,9 +121,8 @@ function Cadeau(){
       {
         data.map(mbe=>(
           <Figure className='item-cadeau'>
-            <Figure.Image
-              width={171}
-              height={180}
+            <Figure.Image className=''
+              
               alt="171x180"
               src={mbe.img}
               thumbnail

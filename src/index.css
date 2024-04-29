@@ -46,6 +46,10 @@ main {
     font-weight: 900;
     opacity: 1;
  }
+ .figure-img{
+    height: 200px !important;
+    width: 200px !important;
+ }
 
  @media screen and (max-width: 600px) {
     body {
