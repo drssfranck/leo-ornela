@@ -1,0 +1,41 @@
+{
+  "files": {
+    "main.css": "/Cedric&ornella/static/css/main.5d7ea5a9.css",
+    "main.js": "/Cedric&ornella/static/js/main.04303028.js",
+    "static/media/12.jpeg": "/Cedric&ornella/static/media/12.da4a3ed9531d300d0bfd.jpeg",
+    "static/media/10.jpeg": "/Cedric&ornella/static/media/10.d08a6f0a2804866add9a.jpeg",
+    "static/media/leoetornella.jpg": "/Cedric&ornella/static/media/leoetornella.141662668c1c9493d94e.jpg",
+    "static/media/14.jpeg": "/Cedric&ornella/static/media/14.96c37dea65f9abc3b7fb.jpeg",
+    "static/media/17.jpeg": "/Cedric&ornella/static/media/17.b7b15e93347358763684.jpeg",
+    "static/media/27.jpeg": "/Cedric&ornella/static/media/27.13d6dcff92639f86f8b4.jpeg",
+    "static/media/11.jpeg": "/Cedric&ornella/static/media/11.0a0255845f4307cffe59.jpeg",
+    "static/media/8.jpeg": "/Cedric&ornella/static/media/8.1ade23a97a9f47f2ebdb.jpeg",
+    "static/media/6.jpeg": "/Cedric&ornella/static/media/6.5e4bae70f1e86c4a53d8.jpeg",
+    "static/media/20.jpeg": "/Cedric&ornella/static/media/20.f5656c6bc200d2851174.jpeg",
+    "static/media/15.jpeg": "/Cedric&ornella/static/media/15.0b50312f2535658764f0.jpeg",
+    "static/media/16.jpeg": "/Cedric&ornella/static/media/16.b2715e686027ac82c2db.jpeg",
+    "static/media/18.jpeg": "/Cedric&ornella/static/media/18.9f791816258a72ff2b57.jpeg",
+    "static/media/24.jpeg": "/Cedric&ornella/static/media/24.d99c2e2beaebaae36da5.jpeg",
+    "static/media/22.jpeg": "/Cedric&ornella/static/media/22.933bbf2646fc2f72c24d.jpeg",
+    "static/media/26.jpeg": "/Cedric&ornella/static/media/26.3bdba9f1b1717622e7c7.jpeg",
+    "static/media/21.jpeg": "/Cedric&ornella/static/media/21.5634cbd65c1aeea56595.jpeg",
+    "static/media/19.jpeg": "/Cedric&ornella/static/media/19.e5aefc1c7a627c12c94c.jpeg",
+    "static/media/5.jpeg": "/Cedric&ornella/static/media/5.f611a9b71d93c96925bb.jpeg",
+    "static/media/13.jpeg": "/Cedric&ornella/static/media/13.afff72ebb0c49ebc9b52.jpeg",
+    "static/media/7.jpeg": "/Cedric&ornella/static/media/7.fd680c84a51fb1ca9944.jpeg",
+    "static/media/4.jpeg": "/Cedric&ornella/static/media/4.3240765128a3114810f9.jpeg",
+    "static/media/25.jpeg": "/Cedric&ornella/static/media/25.9d9b81a88fc4db29e321.jpeg",
+    "static/media/1.jpeg": "/Cedric&ornella/static/media/1.e26acb0adcf8c7c776ff.jpeg",
+    "static/media/23.jpeg": "/Cedric&ornella/static/media/23.97d6e94ee332b319cc80.jpeg",
+    "static/media/3.jpeg": "/Cedric&ornella/static/media/3.f9f80a06673991459363.jpeg",
+    "static/media/9.jpeg": "/Cedric&ornella/static/media/9.c016bbb5781e37ff1a3f.jpeg",
+    "static/media/2.jpeg": "/Cedric&ornella/static/media/2.229bb1dba26127a9bf29.jpeg",
+    "index.html": "/Cedric&ornella/index.html",
+    "main.5d7ea5a9.css.map": "/Cedric&ornella/static/css/main.5d7ea5a9.css.map",
+    "main.04303028.js.map": "/Cedric&ornella/static/js/main.04303028.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5d7ea5a9.css",
+    "static/js/main.04303028.js"
+  ]
+}
