@@ -1,4 +1,5 @@
 import './index.css';
+
 import Figure from 'react-bootstrap/Figure';
 import leoornella from './img/leoetornella.jpg';
 import Button from 'react-bootstrap/Button';
@@ -9,9 +10,12 @@ import React from 'react';
 function App() {
   return (
     <div>
+      <>
+
         <NavBar />
         <Carousel/>
         <Cadeau/>
+      </>
     </div>
   );
 }
