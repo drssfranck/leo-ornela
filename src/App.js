@@ -53,33 +53,31 @@ Nulla vitae elit libero. Aenean lacinia bibendum nulla sed consectetur. Vivamus 
   </div>
 );
 var data = [
-  {id:0, name:'Extracteur de jus', prix:1000,shop:'santa Lucia',img:require('./img/image/1.jpeg')},
-  {id:1, name:'Extracteur de jus', prix:1000,shop:'santa Lucia',img:require('./img/image/2.jpeg')},
-  {id:2, name:'Extracteur de jus', prix:1000,shop:'santa Lucia',img:require('./img/image/3.jpeg')},
-  {id:3, name:'Extracteur de jus', prix:1000,shop:'santa Lucia',img:require('./img/image/4.jpeg')},
-  {id:4, name:'Extracteur de jus', prix:1000,shop:'santa Lucia',img:require('./img/image/5.jpeg')},
-  {id:5, name:'Extracteur de jus', prix:1000,shop:'santa Lucia',img:require('./img/image/6.jpeg')},
-  {id:6, name:'Extracteur de jus', prix:1000,shop:'santa Lucia',img:require('./img/image/7.jpeg')},
-  {id:7, name:'Extracteur de jus', prix:1000,shop:'santa Lucia',img:require('./img/image/8.jpeg')},
-  {id:8, name:'Extracteur de jus', prix:1000,shop:'santa Lucia',img:require('./img/image/9.jpeg')},
-  {id:9, name:'Extracteur de jus', prix:1000,shop:'santa Lucia',img:require('./img/image/10.jpeg')},
-  {id:10, name:'Extracteur de jus', prix:1000,shop:'santa Lucia',img:require('./img/image/11.jpeg')},
-  {id:11, name:'Extracteur de jus', prix:1000,shop:'santa Lucia',img:require('./img/image/12.jpeg')},
-  {id:12, name:'Extracteur de jus', prix:1000,shop:'santa Lucia',img:require('./img/image/13.jpeg')},
-  {id:13, name:'Extracteur de jus', prix:1000,shop:'santa Lucia',img:require('./img/image/14.jpeg')},
-  {id:14, name:'Extracteur de jus', prix:1000,shop:'santa Lucia',img:require('./img/image/15.jpeg')},
-  {id:15, name:'Extracteur de jus', prix:1000,shop:'santa Lucia',img:require('./img/image/16.jpeg')},
-  {id:16, name:'Extracteur de jus', prix:1000,shop:'santa Lucia',img:require('./img/image/17.jpeg')},
-  {id:17, name:'Extracteur de jus', prix:1000,shop:'santa Lucia',img:require('./img/image/18.jpeg')},
-  {id:18, name:'Extracteur de jus', prix:1000,shop:'santa Lucia',img:require('./img/image/19.jpeg')},
-  {id:19, name:'Extracteur de jus', prix:1000,shop:'santa Lucia',img:require('./img/image/20.jpeg')},
-  {id:20, name:'Extracteur de jus', prix:1000,shop:'santa Lucia',img:require('./img/image/21.jpeg')},
-  {id:21, name:'Extracteur de jus', prix:1000,shop:'santa Lucia',img:require('./img/image/22.jpeg')},
-  {id:22, name:'Extracteur de jus', prix:1000,shop:'santa Lucia',img:require('./img/image/23.jpeg')},
-  {id:23, name:'Extracteur de jus', prix:1000,shop:'santa Lucia',img:require('./img/image/24.jpeg')},
-  {id:24, name:'Extracteur de jus', prix:1000,shop:'santa Lucia',img:require('./img/image/25.jpeg')},
-  {id:25, name:'Extracteur de jus', prix:1000,shop:'santa Lucia',img:require('./img/image/26.jpeg')},
-  {id:26, name:'Extracteur de jus', prix:1000,shop:'santa Lucia',img:require('./img/image/27.jpeg')},
+  {id:0, name:'ROBOT MULTIFONCTION', prix:1000,shop:'santa Lucia',img:require('./img/image/27.jpeg')},
+  {id:1, name:'FER À REPASSER À VAPEUR ', prix:1000,shop:'santa Lucia',img:require('./img/image/1.jpeg')},
+  {id:2, name:' MARMITES CHAUFFANTES', prix:1000,shop:'santa Lucia',img:require('./img/image/2.jpeg')},
+  {id:3, name:' MARMITES CHAUFFANTES', prix:1000,shop:'santa Lucia',img:require('./img/image/3.jpeg')},
+  {id:4, name:' JEUX DE PLATEAUX', prix:1000,shop:'santa Lucia',img:require('./img/image/4.jpeg')},
+  {id:5, name:'PLANCHE À REPASSER', prix:1000,shop:'santa Lucia',img:require('./img/image/5.jpeg')},
+  {id:6, name:'VEILLEUSE', prix:1000,shop:'santa Lucia',img:require('./img/image/6.jpeg')},
+  {id:7, name:"02 JEUX D'ASSIETTES", prix:1000,shop:'santa Lucia',img:require('./img/image/7.jpeg')},
+  {id:8, name:'VERRE MESUREUR', prix:1000,shop:'santa Lucia',img:require('./img/image/8.jpeg')},
+  {id:9, name:' SALLE A MANGER', prix:1000,shop:'santa Lucia',img:require('./img/image/10.jpeg')},
+  {id:10, name:'KIT PETIT DÉJEUNER', prix:1000,shop:'santa Lucia',img:require('./img/image/11.jpeg')},
+  {id:11, name:' COUVERTS/ ENSEMBLE CUILLÈRE-FOURCHETTE-COUTEAU)', prix:1000,shop:'santa Lucia',img:require('./img/image/12.jpeg')},
+  {id:12, name:' MICRO ONDES AVEC FOUR', prix:1000,shop:'santa Lucia',img:require('./img/image/13.jpeg')},
+  {id:13, name:'06 FLÛTES À CHAMPAGNE', prix:1000,shop:'santa Lucia',img:require('./img/image/14.jpeg')},
+  {id:14, name:'EXTRACTEUR DE JUS DE FRUITS', prix:1000,shop:'santa Lucia',img:require('./img/image/15.jpeg')},
+  {id:15, name:'PLAQUE ÉLECTRIQUE CHAUFFANTE', prix:1000,shop:'santa Lucia',img:require('./img/image/16.jpeg')},
+  {id:16, name:'ENSEMBLE CASSEROLES + POÊLES', prix:1000,shop:'santa Lucia',img:require('./img/image/17.jpeg')},
+  {id:17, name:'FRITEUSE A 02 COMPARTIMENTS ', prix:1000,shop:'santa Lucia',img:require('./img/image/18.jpeg')},
+  {id:18, name:'MOULIN À SEC ( POUR EPICES)', prix:1000,shop:'santa Lucia',img:require('./img/image/19.jpeg')},
+  {id:19, name:'COUPE LÉGUMES', prix:1000,shop:'santa Lucia',img:require('./img/image/20.jpeg')},
+  {id:20, name:'DISTRIBUTEUR DE BOISSONS', prix:1000,shop:'santa Lucia',img:require('./img/image/21.jpeg')},
+  {id:21, name:'02 DISPOSITIFS APÉRO', prix:1000,shop:'santa Lucia',img:require('./img/image/22.jpeg')},
+  {id:22, name:'BOUILLOIRE ÉLECTRIQUE', prix:1000,shop:'santa Lucia',img:require('./img/image/23.jpeg')},
+  {id:23, name:'MOULES  A GATEAUX', prix:1000,shop:'santa Lucia',img:require('./img/image/24.jpeg')},
+  {id:24, name:'COUPE LÉGUMES/ MANDOLINE', prix:1000,shop:'santa Lucia',img:require('./img/image/26.jpeg')},
 
 ]
 
@@ -93,12 +91,12 @@ function MyVerticallyCenteredModal(props) {
     >
       <Modal.Header closeButton>
         <Modal.Title id="contained-modal-title-vcenter">
-          {data[props.id].name}
-          {data[props.id].id}
+          {data[props.cadeau].name}
+          {data[props.cadeau].id}
         </Modal.Title>
       </Modal.Header>
       <Modal.Body>
-        <Image src={data[props.id].img} alt='' width={300} height={300}/>
+        <Image src={data[props.cadeau].img} alt='' width={300} height={300}/>
         <p>
           Cras mattis consectetur purus sit amet fermentum. Cras justo odio,
           dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac
@@ -114,33 +112,31 @@ function MyVerticallyCenteredModal(props) {
 
 
 function Cadeau(){
-  let mat;
   const [modalShow, setModalShow] = React.useState(false)
   return(
-    <div className='container' id="cadeau">
+    <div className='' id="cadeau">
       {
         data.map(mbe=>(
-          <Figure className='item-cadeau'>
-            <Figure.Image className=''
-              
+          <Button variant='text' onClick={() => setModalShow(true)}>
+          <Figure className=''>
+            <Figure.Image className='image-cadeau'
               alt="171x180"
               src={mbe.img}
-              thumbnail
+              
             />
             <Figure.Caption>
-                <>
-                  <Button variant="primary" onClick={() => setModalShow(true)}>
-                    Plus de details id={mat=mbe.id} {mat}
-                  </Button>
-
+                <p className='titre-cadeau'>
+                  {mbe.name}
+                </p>
                   <MyVerticallyCenteredModal
                     show={modalShow}
                     onHide={() => setModalShow(false)}
-                    id={10}
+                    cadeau={mbe.id}
                   />
-                </>
+                
             </Figure.Caption>
           </Figure>
+          </Button>
         ))
       }
     </div>
