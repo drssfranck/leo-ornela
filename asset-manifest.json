@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/leo-ornela/static/css/main.a2f5a945.css",
-    "main.js": "/leo-ornela/static/js/main.c9cd70a0.js",
+    "main.css": "/leo-ornela/static/css/main.940a615f.css",
+    "main.js": "/leo-ornela/static/js/main.db52645d.js",
     "static/media/12.jpeg": "/leo-ornela/static/media/12.da4a3ed9531d300d0bfd.jpeg",
+    "static/media/leo-ornel.jpeg": "/leo-ornela/static/media/leo-ornel.e85d2cf3c8f9809db47f.jpeg",
     "static/media/10.jpeg": "/leo-ornela/static/media/10.d08a6f0a2804866add9a.jpeg",
-    "static/media/leoetornella.jpg": "/leo-ornela/static/media/leoetornella.141662668c1c9493d94e.jpg",
     "static/media/14.jpeg": "/leo-ornela/static/media/14.96c37dea65f9abc3b7fb.jpeg",
     "static/media/17.jpeg": "/leo-ornela/static/media/17.b7b15e93347358763684.jpeg",
     "static/media/27.jpeg": "/leo-ornela/static/media/27.13d6dcff92639f86f8b4.jpeg",
@@ -29,11 +29,11 @@
     "static/media/3.jpeg": "/leo-ornela/static/media/3.f9f80a06673991459363.jpeg",
     "static/media/2.jpeg": "/leo-ornela/static/media/2.229bb1dba26127a9bf29.jpeg",
     "index.html": "/leo-ornela/index.html",
-    "main.a2f5a945.css.map": "/leo-ornela/static/css/main.a2f5a945.css.map",
-    "main.c9cd70a0.js.map": "/leo-ornela/static/js/main.c9cd70a0.js.map"
+    "main.940a615f.css.map": "/leo-ornela/static/css/main.940a615f.css.map",
+    "main.db52645d.js.map": "/leo-ornela/static/js/main.db52645d.js.map"
   },
   "entrypoints": [
-    "static/css/main.a2f5a945.css",
-    "static/js/main.c9cd70a0.js"
+    "static/css/main.940a615f.css",
+    "static/js/main.db52645d.js"
   ]
 }
