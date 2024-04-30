@@ -1,10 +1,11 @@
 import './index.css';
 
 import Figure from 'react-bootstrap/Figure';
-import leoornella from './img/leoetornella.jpg';
+import leoornella from './img/leo-ornel.jpeg';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 import Image from 'react-bootstrap/Image';
+import ListGroup from 'react-bootstrap/ListGroup';
 
 import React from 'react';
 function App() {
@@ -24,7 +25,6 @@ function App() {
 const NavBar = () => (
   <header className='navbar'>
       <div className='navbar__title navbar__item'>CEDRIC & ORNELA</div>
-      <div className='navbar__item'><a href='#story'>Notre Histoire</a></div>
       <div className='navbar__item'><a href='#story'>Programme</a></div>
       <div className='navbar__item'><a href='#cadeau'>Cadeaux</a></div>        
   </header>
@@ -32,25 +32,38 @@ const NavBar = () => (
 
 const Carousel = () =>(
   <div className='row'>
-    <div className='col-lg-6'>
-        <img className='w-100 shadow' src={leoornella} alt='leo et ornella'/>
+     <div className='col-lg-6'>
+        <Image thumbnail height={300} className='w-100 shadow cedric-ornel' src={leoornella} alt='leo et ornella'/>
     </div>
 
-  <div className="col-lg-6">
+    <div className="col-lg-6">
       <div className="p-5 mt-4">
-          <h1 className="display-4">Bienvenu à notre mariage</h1>
+          <h1 className="mariage-cedric">Bienvenu à notre mariage</h1>
           <p className="lead">Le mariage est une union conjugale contractuelle et/ou rituelle, à durée illimitée, déterminée ou indéterminée, reconnue et encadrée par une institution ...</p>
-          <h3>Notre histoire</h3>
-          <p className='lead'>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque euismod leo ac nulla rutrum, vitae semper diam tempus. Donec ut libero leo. Sed eget ligula vitae lorem aliquam tincidunt at quis risus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
+          <h2 className='titr'>Programme du Mariage :</h2>
+          <ListGroup>
+             <ListGroup.Item>11h00 : Mariage civile à la Mairie d'Efoulan</ListGroup.Item>
+             <ListGroup.Item>14h00 : Bénédiction nuptiale à la paroisse de Mvolyé</ListGroup.Item>
+             <ListGroup.Item>16h00 : Coktail au lieu dit <b>Complexe Sainte Mary(à 100f du carrefour Damas)</b></ListGroup.Item>
 
-Curabitur blandit tempus porttitor. Sed posuere consectetur est at lobortis. Maecenas sed diam eget risus varius blandit. Donec dui nulla, mattis eget aliquam vitae, vulputate eu magna. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Aenean euismod bibendum laoreet.
+          </ListGroup>
 
-Nulla vitae elit libero. Aenean lacinia bibendum nulla sed consectetur. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Pellentesque ornare sem lacinia quam venenatis vestibulum.
-          </p>
+          
+            <h3 className='titr'>Déroulement du vin d'honneur :</h3>
+          <div>
+          <ListGroup>
+              <ListGroup.Item><b>17h00</b> : Accueil des invités par les mariés et leurs familles</ListGroup.Item>
+              <ListGroup.Item><b>17h15</b> : Discours des mariés</ListGroup.Item>
+              <ListGroup.Item><b>17h30</b> : Buffet et animations</ListGroup.Item>
+              <ListGroup.Item><b>19h00 </b>: Coupe du gâteau</ListGroup.Item>
+              <ListGroup.Item><b>20h00 </b>: Soirée dansante</ListGroup.Item>
+            </ListGroup>
+          </div>
+           
+          
         </div>
     </div>
-  </div>
+    </div>
 );
 var data = [
   {id:0, name:'ROBOT MULTIFONCTION', prix:1000,shop:'santa Lucia',img:require('./img/image/27.jpeg')},
@@ -109,6 +122,7 @@ function MyVerticallyCenteredModal(props) {
     </Modal>
   );
 }
+
 
 
 function Cadeau(){

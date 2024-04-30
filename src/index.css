@@ -12,7 +12,7 @@ main {
 .navbar {
     display: flex;
     align-items: center;
-    background: pink;
+    background: fuchsia;
     color: white;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-weight: 700;
@@ -39,13 +39,14 @@ main {
 .navbar__item a{
     width: 100%;
     text-decoration: none;
-    color: #000;
+    color: #fff;
+    font-size: 30px;
 }
 
 .figure{
     border: 1px solid;
     padding: 10px;
-    box-shadow: 5px 10px red;
+    box-shadow: 5px 10px fuchsia;
 }
 
 .navbar__item:hover{
@@ -61,11 +62,78 @@ main {
     width: 90%;
     margin: auto;
 }
+.titr{
+    color: fuchsia;
+    font-weight: bolder;
+}
+
+.cedric-ornel{
+    max-height: 700px !important;
+    margin: 20px 0px 0px 50px;
+}
+
+.mariage-cedric{
+    margin-top: 20px;
+  display: block;
+  text-transform: uppercase;
+  font-family: Unica one;
+  padding: 0 20px;
+  position: relative;
+  z-index: 3;
+  text-align: center;
+  font-size: 25px;
+}
+.mariage-cedric::before{
+    
+    content: '';
+  background: black;
+  height: 1px;
+  position: absolute;
+  width: 100%;
+  max-width: 800px;
+  left: 0;
+  top: 50%;
+  z-index: -1;
+}
+.mariage-cedric::after{
+    content: '';
+    background: white;
+    position: absolute;
+    width: 52%;
+    height: 100%;
+    max-width: 800px;
+    left: 24%;
+    top: 0;
+    z-index: -1;
+}
  @media screen and (max-width: 600px) {
     body {
     }
     .navbar__item {
         width: 90%;
         margin: auto;
+    }
+    .cedric-ornel{
+        max-height: 500px !important;
+        margin: 20px 0px 0px 20px;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .mariage-cedric {
+      font-size: 32px;
+    }
+    .mariage-cedric::after {
+      width: 64%;
+      left: 18%;
+    }
+  }
+  @media screen and (max-width: 360px) {
+    .mariage-cedric{
+      font-size: 24px;
+    }
+    .mariage-cedric::after {
+      width: 60%;
+      left: 20%;
     }
   }
