@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    background-image: url('../src/img/images.jpeg');
 }
 p{
     word-wrap: break-word;
@@ -17,6 +18,10 @@ main {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-weight: 700;
 }
+.btn-link{
+  width: 250px;
+}
+
 
 .navbar__title {
     margin-right: auto;
@@ -24,11 +29,16 @@ main {
     padding: 12px 16px;
 }
 .titre-cadeau{
-    color: #000;
+    color: #fff;
     font-weight: 800;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     width: 90%;
 }
-
+.titrrr{
+  font-size: 1vn;
+  color: #fff;
+  
+}
 .maiva{
     max-width: 350px !important;
 }
@@ -37,7 +47,7 @@ main {
 }
 
 .maiva :hover{
-  opacity: 0.1;
+  opacity: 0.5  ;
 }
 .navbar__item {
     padding: 16px 16px;
@@ -58,7 +68,7 @@ main {
 .figure{
     border: 1px solid;
     padding: 10px;
-    box-shadow: 5px 10px fuchsia;
+    box-shadow: 5px 10px #fff;
 }
 
 .navbar__item:hover{
@@ -70,17 +80,17 @@ main {
     width: 300px !important;
  }
 #cadeau{
-    color: #000;
+    color: #fff;
     width: 90%;
     margin: auto;
 }
 .titr{
-    color: fuchsia;
+    color: #fff;
     font-weight: bolder;
 }
 
 .cedric-ornel{
-    max-height: 700px !important;
+    max-height: 500px !important;
     margin: 20px 0px 0px 50px;
 }
 
@@ -214,6 +224,10 @@ main {
       width: 64%;
       left: 18%;
     }
+    .maiva{
+      width: 94%;
+      margin: auto;
+  }
   }
   @media screen and (max-width: 360px) {
     .mariage-cedric{

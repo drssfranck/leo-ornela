@@ -4,9 +4,19 @@ import Badge from 'react-bootstrap/Badge';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 import Image from 'react-bootstrap/Image';
-import { useRef } from 'react';
-
+import {  useRef } from 'react';
 import { useState } from 'react';
+
+import {  collection, getDoc,doc,setDoc,updateDoc, getDocs } from "firebase/firestore";
+import { database } from '../src/firebase/config'
+
+
+const value = collection(database, "Ornella");
+
+
+
+
+
 var data = [
     {id:'0', name:'ROBOT MULTIFONCTION', prix:1000,shop:'santa Lucia',img:require('./img/image/27.jpeg')},
     {id:'1', name:'FER À REPASSER À VAPEUR ', prix:1000,shop:'santa Lucia',img:require('./img/image/1.jpeg')},
@@ -36,8 +46,27 @@ var data = [
   
   ]
   
-  
-  
+  const handleCreate = ()=>{
+   data.map(async maiva=>{
+      {
+        await setDoc(doc(value,maiva.id),{id:maiva.id,nom:maiva.name,qte:3})
+  }
+   })
+}
+
+async function readDataById(id,db) {
+  const docRef = doc(db, "Ornella",id); 
+  const docSnap = await getDoc(docRef);
+  console.log(id);
+  if (docSnap.exists) {
+    console.log("Document data:", docSnap.data());
+    return docSnap.data(); 
+  } else {
+    console.log("No such document!");
+  }
+}
+
+
   
 function Cadeau(){
 
@@ -48,16 +77,41 @@ function Cadeau(){
         const handleShow = () => {setShow(true);};
         const handleValidate = () =>{
           handleClose();
+          let i;
           const pconfir = window.confirm("Confirmer votre choix");
           if(pconfir){
-            let para = itemE.current[index];
-            let pc = itemEls.current[index];
-            para.style.visibility = 'visible';
-            pc.style.backgroundColor = "lime";
-            pc.setAttribute("disabled", "");
+            
+            readDataById(index,database).then((data) => {
+              // Access data properties here if needed
+              if (data) {
+                data.qte--;
+                console.log("Nomccc:", data.nom);
+                console.log("Qte:", data.qte);
+                i = data.qte;
+              }else{
+                console.log("No data")
+              }
+
+              updateDocumentById(index,data)
+              alert("Mariage ! Merci pour le cadeau de " + data.nom  )
+              
+            })
+            .catch((error) => {
+              console.error("Error reading document:", error);
+            });;
+            
+              
+            
             
           }
         }
+
+        async function updateDocumentById(id, data) {
+          const docRef = doc(value, id); // Replace 'yourCollectionName' with your actual collection name
+          await updateDoc(docRef, data);
+          console.log("Document updated successfully!");
+        }
+
         const itemEls = useRef({})
         const itemE = useRef({})
         const handleConfirm = (element) =>{
@@ -69,20 +123,55 @@ function Cadeau(){
             handleClose();
           }
         };
-        
-          
+
 
         
+
+        /* useEffect(() =>{
+          const getData = async()=>{
+            const dbVal = await getDoc(value) 
+            setVal(dbVal.docs.map(doc=>({...doc.data(),id:doc.id})))
+           }
+           getData();
+        }) */
+
+        async function cadeauvalider(){
+          const dbvals = await getDocs(value);
+          const documents = [];
+        
+          dbvals.forEach((doc) => {
+            documents.push(doc.data()); // Add document data to the array
+          });
+        
+        
+          documents.map(stella =>{
+            if (stella.qte <  1) {
+              console.log(stella)
+        
+              let para = itemE.current[stella.id];
+              let pc = itemEls.current[stella.id];
+              para.style.visibility = 'visible';
+              pc.style.backgroundColor = "lime";
+              pc.setAttribute("disabled", "");
+            }
+          })
+        }
+
+        cadeauvalider()
 
     return(
       
       <div className=''>
-        <h1 className='text-center'>Liste des cadeaux </h1>
+        <h1 className='text-center titrrr'>Liste des cadeaux </h1>
         
         <div className='container'>
         {
           data.map(mbe=>(
-          <Button variant="link" key={mbe.id}  id={mbe.id} onClick={() =>handleConfirm(mbe.id)} ref={(element) => itemEls.current[mbe.id] = element}>
+            
+          <Button variant="link" key={mbe.id}  id={mbe.id} onClick={() =>handleConfirm(mbe.id)} ref={(element) => itemEls.current[mbe.id] = element} >
+            {
+          
+          
             <Figure disabled className='maiva'>
               
               <Figure.Image className='image-cadeau'
@@ -97,9 +186,11 @@ function Cadeau(){
                   </p>
               </Figure.Caption>
             </Figure>
+            }
             </Button>
           ))
         }
+        
         </div>
         <Modal show={show} onHide={handleClose}>
             <Modal.Header closeButton>
