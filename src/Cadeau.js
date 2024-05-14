@@ -25,7 +25,7 @@ var data = [
     {id:'4', name:' JEUX DE PLATEAUX', prix:1000,shop:'santa Lucia',img:require('./img/image/4.jpeg')},
     {id:'5', name:'PLANCHE À REPASSER', prix:1000,shop:'santa Lucia',img:require('./img/image/5.jpeg')},
     {id:'6', name:'VEILLEUSE', prix:1000,shop:'santa Lucia',img:require('./img/image/6.jpeg')},
-    {id:'7', name:"02 JEUX D'ASSIETTES", prix:1000,shop:'santa Lucia',img:require('./img/image/7.jpeg')},
+    {id:'7', name:"JEUX D'ASSIETTES", prix:1000,shop:'santa Lucia',img:require('./img/image/7.jpeg')},
     {id:'8', name:'VERRE MESUREUR', prix:1000,shop:'santa Lucia',img:require('./img/image/8.jpeg')},
     {id:'9', name:' SALLE A MANGER', prix:1000,shop:'santa Lucia',img:require('./img/image/10.jpeg')},
     {id:'10', name:'KIT PETIT DÉJEUNER', prix:1000,shop:'santa Lucia',img:require('./img/image/11.jpeg')},
@@ -43,6 +43,15 @@ var data = [
     {id:'22', name:'BOUILLOIRE ÉLECTRIQUE', prix:1000,shop:'santa Lucia',img:require('./img/image/23.jpeg')},
     {id:'23', name:'MOULES  A GATEAUX', prix:1000,shop:'santa Lucia',img:require('./img/image/24.jpeg')},
     {id:'24', name:'COUPE LÉGUMES/ MANDOLINE', prix:1000,shop:'santa Lucia',img:require('./img/image/26.jpeg')},
+  
+    {id:'25', name:'PLAQUE À GAZ', prix:1000,shop:'santa Lucia',img:require('./img/image/28.jpeg')},
+  
+    {id:'26', name:'FILTRE À EAU', prix:1000,shop:'santa Lucia',img:require('./img/image/29.jpeg')},
+  
+    {id:'27', name:'ENVELLOPE D`ARGENT CFA', prix:1000,shop:'santa Lucia',img:require('./img/image/31.jpeg')},
+  
+    {id:'28', name:'RÉGULATEUR DE TENSION', prix:1000,shop:'santa Lucia',img:require('./img/image/32.jpeg')},
+  
   
   ]
   
@@ -93,7 +102,7 @@ function Cadeau(){
               }
 
               updateDocumentById(index,data)
-              alert("Mariage ! Merci pour le cadeau de " + data.nom  )
+              alert("Mariage ! Merci pour le cadeau de " + data.nom )
               
             })
             .catch((error) => {
